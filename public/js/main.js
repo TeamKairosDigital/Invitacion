@@ -176,7 +176,7 @@ document.addEventListener('DOMContentLoaded', () => {
         start: "top top",
         end: "100", // o +=3000
         pin: ".wrapper",
-        scrub: 1
+        scrub: 2
       }
     })
     .to(".efectoScroll", { scale: 25, z: 1000 })
@@ -187,6 +187,7 @@ document.addEventListener('DOMContentLoaded', () => {
     .to(".boleto", { zIndex: 1 });  // baja después
     
   }
+
 
 
   function iniciarAnimaciones() {

@@ -181,7 +181,57 @@ body {
 box-shadow: 1px -67px 76px -26px rgba(0,0,0,0.24);
 -webkit-box-shadow: 1px -67px 76px -26px rgba(0,0,0,0.24);
 -moz-box-shadow: 1px -67px 76px -26px rgba(0,0,0,0.24);
+
 }
+
+.boletoShadow {
+  position: relative;
+  overflow: hidden; /* 👈 Esto corta todo lo que salga */
+}
+
+.boletoShadow::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 20%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(200, 200, 200, 0) 0%,       /* transparente al inicio */
+    rgba(200, 200, 200, 0.4) 50%,    /* gris metálico semitransparente */
+    rgba(200, 200, 200, 0) 80%      /* transparente al final */
+  );
+  transform: skewX(-20deg);
+  pointer-events: none;
+  animation: shine-reflection 5s ease-in-out infinite;
+  z-index: 10;
+}
+
+@keyframes shine-reflection {
+  0% {
+    left: -100%;
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    left: 500%;
+    opacity: 0;
+  }
+}
+
+
+
+
+
+
+
+
 
 .efectoScroll {
   z-index: 2;
