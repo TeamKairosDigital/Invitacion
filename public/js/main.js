@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   btnWhatsApp.addEventListener("click", () => {
     if (!invitado) return;
-    const telefono = "529612385401";
+    const telefono = "529612551189";
     const mensaje = encodeURIComponent(`Hola, soy ${invitado.nombre} quiero confirmar mi asistencia.`);
     const url = `https://wa.me/${telefono}?text=${mensaje}`;
     window.open(url, "_blank");

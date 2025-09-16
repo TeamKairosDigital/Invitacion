@@ -709,7 +709,7 @@ box-shadow: 1px -67px 76px -26px rgba(0,0,0,0.24);
   width: calc(100% + 16px);
   height: calc(100% + 16px);
   border-radius: 9999px;
-  border: 2px dashed rgba(207, 207, 207, 1); /* color y estilo */
+  border: 2.5px dashed rgb(245, 245, 26); /* color y estilo */
   animation: pulse 1.5s infinite;
 }
 
@@ -717,15 +717,15 @@ box-shadow: 1px -67px 76px -26px rgba(0,0,0,0.24);
 @keyframes pulse {
   0% {
     transform: scale(0.9);
-    opacity: 0.6;
+    opacity: 1;
   }
   50% {
     transform: scale(1.1);
-    opacity: 0.3;
+    opacity: 1;
   }
   100% {
     transform: scale(0.9);
-    opacity: 0.6;
+    opacity: 1;
   }
 }
 
@@ -841,8 +841,8 @@ box-shadow: 1px -67px 76px -26px rgba(0,0,0,0.24);
   background: white; /* Fondo sólido blanco */
   /* máscara: todo visible menos los círculos */
   -webkit-mask: 
-    radial-gradient(circle 15px at left 70%, black 100%, transparent 100%),
-    radial-gradient(circle 15px at right 70%, black 100%, transparent 100%),
+    radial-gradient(circle 15px at left 60%, black 100%, transparent 100%),
+    radial-gradient(circle 15px at right 60%, black 100%, transparent 100%),
     linear-gradient(black 0 0);
   -webkit-mask-composite: destination-out, destination-out, add;
   mask-composite: exclude, exclude, add;
