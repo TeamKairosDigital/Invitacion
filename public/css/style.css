@@ -88,7 +88,7 @@ body {
   bottom: 0;
   width: 100%;
   height: 100%;
-  background: url("../img/Persioana_version2.png") center/cover no-repeat;
+  background: url("../img/persiana_ovalaada.png") center/cover no-repeat;
   background-size: cover;
   background-position: center center;
   /* background: linear-gradient(to bottom, #bbb, #eee); */
@@ -107,7 +107,7 @@ body {
 }
 
 .wrapper {
-  min-height: 120vh;
+  /* min-height: 110vh; */
   perspective: 2000px; /* para z */
 }
 
@@ -230,7 +230,66 @@ body {
 
 
 
+/* From Uiverse.io by Shoh2008 */ 
+.loaderPin {
+  width: 15px;
+  height: 15px;
+  display: block;
+  box-sizing: border-box;
+  position: relative;
+  
+}
 
+.loaderPin::after {
+  content: '';
+  width: 15px;
+  height: 15px;
+  left: 0;
+  bottom: 0;
+  top: -5px;
+  position: absolute;
+  border-radius: 50% 50% 0;
+  border: 5px solid red;
+  transform: rotate(45deg) translate(0, 0);
+  box-sizing: border-box;
+  animation: animMarker 0.5s ease-in-out infinite alternate;
+}
+
+.loaderPin::before {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 120%;
+  width: 13px;
+  height: 4px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.2);
+  animation: animShadow 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes animMarker {
+  0% {
+    transform: rotate(45deg) translate(3px, 3px);
+  }
+
+  100% {
+    transform: rotate(45deg) translate(-3px, -3px);
+  }
+}
+
+@keyframes animShadow {
+  0% {
+    transform: scale(0.7);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+    
 
 
 

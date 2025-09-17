@@ -186,7 +186,7 @@ document.addEventListener('DOMContentLoaded', () => {
     .to(".persiana", { yPercent: -1000 }, "<")
     
     .to(".boleto", { zIndex: 500 }) // sube mientras ocurre la animación
-    .to(".boleto", { zIndex: 1 });  // baja después
+    // .to(".boleto", { zIndex: 1 })  // baja después
     
   }
 
