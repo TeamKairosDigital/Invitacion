@@ -13,4 +13,6 @@ const invitados = [
   { id: "andres", nombre: "Andrés Mora", vuelo: "AM789", asiento: "3B", img: "invitacion-carlos.png" },
   { id: "gabriel", nombre: "Gabriel Orantes", vuelo: "AM789", asiento: "3B", img: "invitacion-carlos.png" },
   { id: "oscar", nombre: "Óscar Montes", vuelo: "AM789", asiento: "3B", img: "invitacion-carlos.png" },
+  { id: "antonio", nombre: "Antonio Choy", vuelo: "AM789", asiento: "3B", img: "invitacion-carlos.png" },
+  { id: "javier", nombre: "Javier Nangullasmu", vuelo: "AM789", asiento: "3B", img: "invitacion-carlos.png" },
 ];
