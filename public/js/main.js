@@ -175,8 +175,10 @@ document.addEventListener('DOMContentLoaded', () => {
         trigger: ".wrapper",
         start: "top top",
         end: "100", // o +=3000
-        pin: ".wrapper",
-        scrub: 2
+        pin: true,
+         pinSpacing: true, 
+        scrub: 2,
+        //markers: true
       }
     })
     .to(".efectoScroll", { scale: 25, z: 1000 })

@@ -18,8 +18,9 @@ body {
 
   font-family: "Jost", sans-serif;
 
-    overflow-y: scroll; /* Mantiene el scroll */
+  overflow-y: scroll; /* Mantiene el scroll */
   -webkit-overflow-scrolling: auto; /* iOS: desactiva el rebote con inercia */
+  overflow-scrolling: auto;
 }
 
 
@@ -66,7 +67,7 @@ body {
   /* background: url("../img/VentanaMarco.png"); */
   background-size: cover;
   background-position: center;
-    z-index: 10;
+    z-index: 10 !important;
 }
 
 .ventana_fondo {
@@ -83,10 +84,11 @@ body {
 
 .persiana {
   position: absolute;
+  inset: 0;
   bottom: 0;
   width: 100%;
   height: 100%;
-  background: url("../img/Persioana_version2.png");
+  background: url("../img/Persioana_version2.png") center/cover no-repeat;
   background-size: cover;
   background-position: center center;
   /* background: linear-gradient(to bottom, #bbb, #eee); */
@@ -94,6 +96,8 @@ body {
   /* cursor: grab; */
   z-index: 1;
   transform: translateY(0); /* inicia cerrada */
+  clip-path: ellipse(55% 50% at 50% 50%);
+
   /* touch-action: none; */
   /* box-shadow: 0 0 10px rgba(0,0,0,0.3); */
 }
@@ -178,10 +182,9 @@ body {
 }
 
 .boletoShadow{
-box-shadow: 1px -67px 76px -26px rgba(0,0,0,0.24);
--webkit-box-shadow: 1px -67px 76px -26px rgba(0,0,0,0.24);
--moz-box-shadow: 1px -67px 76px -26px rgba(0,0,0,0.24);
-
+  box-shadow: 1px -67px 76px -26px rgba(0,0,0,0.24);
+  -webkit-box-shadow: 1px -67px 76px -26px rgba(0,0,0,0.24);
+  -moz-box-shadow: 1px -67px 76px -26px rgba(0,0,0,0.24);
 }
 
 .boletoShadow {
